@@ -16,3 +16,5 @@ def convert_pdf_to_bw(input_path, output_path):
     images = [Image.open(os.path.join(output_path, f)) for f in os.listdir(output_path) if f.endswith('.png')]
     images[0].save(f'{output_path}/output.pdf', save_all=True, append_images=images[1:])
 
+if __name__ == '__main__':
+    pass
